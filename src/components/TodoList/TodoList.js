@@ -28,7 +28,7 @@ function TodoList() {
           className="btn btn-primary"
           onClick={(e) => {
             e.preventDefault();
-            store.dispatch(updateTodoList(todo));
+            store.dispatch(updateTodoList(Number(todo)));
           }}
         >
           Add item
